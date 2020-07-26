@@ -6,7 +6,7 @@ bool checkPrime(int n);
 int main()
 {
     int n, i;
-    bool flag = false;
+    bool num = false;
 
     cout << "Enter a positive  integer: ";
     cin >> n;
@@ -18,12 +18,12 @@ int main()
             if (checkPrime(n - i))
             {
                 cout << n << " = " << i << " + " << n-i << endl;
-                flag = true;
+                num = true;
             }
         }
     }
 
-    if (!flag)
+    if (!num)
       cout << n << " can't be expressed as sum of two prime numbers.";
 
     return 0;
